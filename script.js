@@ -6,18 +6,14 @@
 // these are readable by anyone who opens this file in a browser
 // — see the security note at the bottom of this file before
 // deploying this anywhere public.
-let apiKeys = [];
+const apiKeys = [
+  "__KEY_1__",
+  "__KEY_2__",
+  "__KEY_3__",
+  "__KEY_4__",
+  "__KEY_5__"
+];
 
-async function loadApiKeys() {
-  try {
-    const response = await fetch("https://gist.githubusercontent.com/Glax106/77e2330a015c9600a8a6e94445a1c7fd/raw/fb75b818e917587a79d75ea9592f17288bb18ccf/keys.json");
-    apiKeys = await response.json();
-  } catch (error) {
-    console.error("Error loading keys:", error);
-  }
-}
-
-loadApiKeys();
 
 
 const GEMINI_MODEL = "gemini-1.5-flash";
