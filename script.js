@@ -445,10 +445,10 @@ function renderHistory(personaKey) {
 
 function getGreeting(key) {
   const greetings = {
-    nova: "Hi, I'm Nova. Open the menu in the top-left to meet Prof. Euler, Alisa, and KlingShot.",
-    euler: "Greetings. I'm Prof. Euler — bring me an equation, a proof, or a problem set, and I'll walk through it step by step.",
-    alisa: "Hii~ um, I'm Alisa 🥺💕 I'm really glad you're here... hehe. What's on your mind today?",
-    klingshot: "Yooo, KlingShot here 🎮 Ready to talk strats, builds, or just vibe after a rough match. What are we playing?",
+    nova: "Hi, I'm LolYouAll. Open the menu in the top-left to meet Sfir, Milashka & Glax.",
+    euler: "Greetings. I'm Prof. Sfir — bring me an equation, a proof, or a problem set, and I'll walk through it step by step.",
+    alisa: "Hii~ um, I'm Milashka 🥺💕 I'm really glad you're here... hehe. What's on your mind today?",
+    klingshot: "Yooo, Glax here 🎮 Ready to talk strats, builds, or just vibe after a rough match. What are we playing?",
   };
   return greetings[key];
 }
