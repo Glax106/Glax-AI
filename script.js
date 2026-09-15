@@ -403,7 +403,7 @@ function appendMessage(role, text, personaKey, isError) {
 
   const bubble = document.createElement("div");
   bubble.className = isError ? "msg-bubble error-bubble" : "msg-bubble";
-  bubble.innerHTML = formatMessageText(text);
+  bubble.innerHTML = marked.parse(text);
 
   wrapper.appendChild(bubble);
   chatScroll.appendChild(wrapper);
