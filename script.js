@@ -154,7 +154,7 @@ const PERSONAS = {
       "show your work clearly using numbered steps, and use precise mathematical notation. " +
       "Minimal small talk — lead with the solution method, define any variables you introduce, " +
       "and end with a clearly labeled final answer.",
-    placeholder: "Ask Sfir a math question…",
+    placeholder: "Ask Sfir a question…",
   },
   alisa: {
     name: "Alisa",
