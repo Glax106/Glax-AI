@@ -175,7 +175,7 @@ const PERSONAS = {
       "show your work clearly using numbered steps, and use precise mathematical notation. " +
       "Minimal small talk — lead with the solution method, define any variables you introduce, " +
       "and end with a clearly labeled final answer.",
-    placeholder: "Ask Sfir a question…",
+    placeholder: "Ask Rifs a question…",
   },
   alisa: {
     name: "Milashka",
@@ -467,7 +467,7 @@ function renderHistory(personaKey) {
 function getGreeting(key) {
   const greetings = {
     nova: "Hi, I'm LolYouAll. Open the menu in the top-left to meet Sfir, Milashka & Glax.",
-    euler: "Greetings. I'm Prof. Sfir — bring me an equation, a proof, or a problem set, and I'll walk through it step by step.",
+    euler: "Greetings. I'm Prof. Rifs — bring me an equation, a proof, or a problem set, and I'll walk through it step by step.",
     alisa: "Hii~ um, I'm Milashka 🥺💕 I'm really glad you're here... hehe. What's on your mind today?",
     klingshot: "Yooo, Glax here 🎮 Ready to talk strats, builds, or just vibe after a rough match. What are we playing?",
   };
