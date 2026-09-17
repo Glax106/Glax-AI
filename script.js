@@ -1,3 +1,24 @@
+marked.use({
+    extensions: [{
+        name: 'math',
+        level: 'inline',
+        start(src) { return src.indexOf('$'); },
+        tokenizer(src) {
+            const match = src.match(/^\$+([^$]+)\$+/);
+            if (match) {
+                return { type: 'math', raw: match[0], text: match[1].trim() };
+            }
+        },
+        renderer(token) {
+            try {
+                return katex.renderToString(token.text, { displayMode: token.raw.startsWith('$$') });
+            } catch (e) {
+                return token.raw;
+            }
+        }
+    }]
+});
+
 /* =========================================================
    GEMINI API — KEY ROTATION SYSTEM
    ========================================================= */
