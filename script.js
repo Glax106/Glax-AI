@@ -133,8 +133,8 @@ async function callGeminiWithRotation(history, systemPrompt) {
    ========================================================= */
 
 const PERSONAS = {
-  nova: {
-    name: "Nova",
+  LolYouAll: {
+    name: "LolYouAll",
     status: "Online · Ready to help",
     theme: "ice",
     avatar: "assets/avatars/nova.png",
@@ -144,8 +144,8 @@ const PERSONAS = {
       "Keep a warm but professional tone.",
     placeholder: "Message LolYouAll…",
   },
-  euler: {
-    name: "Prof. Euler",
+  Sfir: {
+    name: "Sfir",
     status: "Online · Solving equations",
     theme: "ice",
     avatar: "assets/avatars/euler.png",
@@ -156,8 +156,8 @@ const PERSONAS = {
       "and end with a clearly labeled final answer.",
     placeholder: "Ask Sfir a question…",
   },
-  alisa: {
-    name: "Alisa",
+  Milashka: {
+    name: "Milashka",
     status: "Online · thinking of youuu 💕",
     theme: "pink",
     avatar: "assets/avatars/alisa.png",
@@ -180,8 +180,8 @@ const PERSONAS = {
       "professional support when appropriate.",
     placeholder: "Chat with Milashka...",
   },
-  klingshot: {
-    name: "KlingShot",
+ Glax: {
+    name: "Glax",
     status: "Online · Ready to queue up",
     theme: "klingshot",
     avatar: "assets/avatars/klingshot.png",
