@@ -472,18 +472,18 @@ function hideTyping() {
  * to simulate an assistant "typing" its reply.
  */
 function typeIntoBubble(bubbleEl, fullText, onDone) {
-  const formatted = formatMessageText(fullText);
-  const speedMs = Math.max(4, Math.min(18, 900 / fullText.length));
-  let i = 0;
-  const plain = fullText;
-  const interval = setInterval(() => {
-    i += Math.ceil(plain.length / 120) || 1;
-    bubbleEl.textContent = plain.slice(0, i);
-    chatScroll.scrollTop = chatScroll.scrollHeight;
-    if (i >= plain.length) {
-      clearInterval(interval);
-      bubbleEl.innerHTML = formatted;
-      if (onDone) onDone();
+    const speedMs = Math.max(4, Math.min(18, 900 / fullText.length));
+    let i = 0;
+    const plain = fullText;
+    const interval = setInterval(() => {
+        i += Math.ceil(plain.length / 120) || 1;
+        bubbleEl.innerHTML = marked.parse(plain.slice(0, i));
+        chatScroll.scrollTop = chatScroll.scrollHeight;
+        if (i >= plain.length) {
+            clearInterval(interval);
+            bubbleEl.innerHTML = marked.parse(fullText);
+            if (onDone) onDone();
+           
     }
   }, speedMs);
 }
